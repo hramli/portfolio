@@ -5,6 +5,12 @@ class Activities extends React.Component{
         return (
             <div className="Activities">
                 <h1>Test</h1>
+                <div className="Activities">
+                    <h1>Test</h1>
+                </div>
+                <div className="Activities">
+                    <h1>Test</h1>
+                </div>
             </div>
         )
     }

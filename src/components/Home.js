@@ -5,6 +5,12 @@ class Home extends React.Component{
     render(){
         return (
             <div className="Home container">
+                <nav className="navbar fixed-top navbar-light bg-faded fade-in-top">
+                    <div className="container">
+                        <a class="navbar-brand" href="#">Fixed top</a>
+                    </div>
+                </nav>
+
                 <div className="outer">
                     <div className="middle">
                         <div className="row">
@@ -12,8 +18,8 @@ class Home extends React.Component{
                                 <div className="outer">
                                     <div className="middle">
                                         <h1 className="display-4">Hello, world!</h1>
-                                        <p className="lead">I am Harry, a <strong>Computer Science</strong> senior studying at <strong>University of California, Los Angeles</strong></p>                                         
-                                        <p className="lead home-lead-2">Passionate about technology and football.</p>
+                                        <p className="lead">I am Harry, a <strong>Computer Science</strong> senior studying at <strong>University of California, Los Angeles</strong>.</p>                                         
+                                        <p className="lead home-lead-2">Passionate about tech and football.</p>
                                     </div>
                                 </div>
                             </div>
@@ -24,6 +30,9 @@ class Home extends React.Component{
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="chevron-container bounce">
+                    <i className="fas fa-chevron-down"></i>
                 </div>
             </div>
         )
