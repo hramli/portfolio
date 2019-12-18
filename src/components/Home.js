@@ -21,7 +21,7 @@ class Home extends React.Component{
                             <span className="navbar-toggler-icon"></span>
                         </button>
 
-                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div className="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
                                     <Link
@@ -33,6 +33,17 @@ class Home extends React.Component{
                                         offset={-70}
                                         duration= {500}
                                     >Experience</Link>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                            <ul className="navbar-nav mr-auto">
+                                <li className="nav-item">
+                                    <a className="nav-link link-icon" target="_blank" href="https://www.linkedin.com/in/harryramli/"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link link-icon" target="_blank" href="https://github.com/hramli"><i class="fab fa-github"></i></a>
                                 </li>
                             </ul>
                         </div>
