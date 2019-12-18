@@ -11,6 +11,14 @@ body{
   color: #fff; 
 }
 
+.navbar-brand, .nav-link{
+  cursor: pointer;
+}
+
+.nav-item > .active {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
 .section-header{
   font-size: 2.5rem;
 }

@@ -5,6 +5,7 @@ import './App.css';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 //importing images for experience section
 import rms from './images/rms.png';
@@ -15,6 +16,14 @@ class App extends React.Component {
     experience: {
         name: 'Experience',
         cardInfo: [
+          {
+            id: 1,
+            title: 'Incoming SDE Intern, Summer 2020',
+            description: [
+    
+            ],
+            image: amz
+          },
           {
             id: 2,
             title: 'Software Engineer Intern, Summer 2019',
