@@ -1,5 +1,5 @@
 import React from 'react';
-import profilepic from './../profilepicture.png'
+import profilepic from './../images/profilepicture.png'
 
 class Home extends React.Component{
     render(){
@@ -46,7 +46,7 @@ class Home extends React.Component{
                     </div>
                 </div>
                 <div className="chevron-container bounce">
-                    <i className="fas fa-chevron-down"></i>
+                    <a><i className="fas fa-chevron-down"></i></a>
                 </div>
             </div>
         )
