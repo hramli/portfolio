@@ -28,14 +28,6 @@ class App extends React.Component {
         name: 'Experience',
         cardInfo: [
           {
-            id: 1,
-            title: 'Incoming SDE Intern, Summer 2020',
-            description: [
-    
-            ],
-            image: amz
-          },
-          {
             id: 2,
             title: 'Software Engineer Intern, Summer 2019',
             description: [
