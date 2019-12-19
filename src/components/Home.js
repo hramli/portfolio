@@ -16,7 +16,7 @@ class Home extends React.Component{
                             smooth={true}
                             offset={-70}
                             duration= {500}
-                        ><span class="h-logo">H</span>R
+                        ><span className="h-logo">H</span>R
                         </Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                             <span className="navbar-toggler-icon"></span>

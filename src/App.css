@@ -146,6 +146,10 @@ body{
   padding-bottom: 2em;
 }
 
+.map {
+  height: 333px;
+}
+
 /* Info Component */
 
 .Info{
