@@ -16,7 +16,7 @@ class Home extends React.Component{
                             smooth={true}
                             offset={-70}
                             duration= {500}
-                        >HR
+                        ><span class="h-logo">H</span>R
                         </Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                             <span className="navbar-toggler-icon"></span>
@@ -34,6 +34,17 @@ class Home extends React.Component{
                                         offset={-70}
                                         duration= {500}
                                     >Experience</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link
+                                        activeClass="active"
+                                        className="nav-link"
+                                        to="skills"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration= {500}
+                                    >Skills</Link>
                                 </li>
                             </ul>
                         </div>

@@ -2,25 +2,15 @@ import React from 'react';
 import Home from './components/Home';
 import Info from './components/Info';
 import Skills from './components/Skills';
+import AboutMe from './components/AboutMe';
 import './App.css';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Link, animateScroll as scroll } from 'react-scroll';
 
 //importing images for experience section
 import rms from './images/rms.png';
 import amz from './images/amz.png';
-
-//import logos for skills sectoin
-import angular from './images/skills/testlogo.png';
-import c from './images/skills/c.png';
-import csharp from './images/skills/csharp.png';
-import java from './images/skills/java.png';
-import js from './images/skills/js.png';
-import mysql from './images/skills/mysql.png';
-import netcore from './images/skills/netcore.png';
-import react from './images/skills/react.png';
 
 class App extends React.Component {
   state = {
@@ -43,47 +33,7 @@ class App extends React.Component {
             image: rms
           }
         ]        
-    },
-    education: {
-      name: 'Education',
-      cardInfo: [
-
-      ]
-    },
-    skills:[
-      {
-        name: 'Angular',
-        logo: angular
-      },
-      {
-        name: 'C',
-        logo: c
-      },
-      {
-        name: 'C#',
-        logo: csharp
-      },
-      {
-        name: 'Java',
-        logo: java
-      },
-      {
-        name: 'JavaScript',
-        logo: js
-      },
-      {
-        name: 'MySQL',
-        logo: mysql
-      },
-      {
-        name: '.NET Core',
-        logo: netcore
-      },
-      {
-        name: 'React',
-        logo: react
-      }
-    ]
+    }
   }
 
   componentDidMount(){
@@ -99,9 +49,16 @@ class App extends React.Component {
           <Home />
         </div>
         <div className="banner mt-2">
+          <AboutMe />
           <Info info={this.state.experience} />
           <Skills skills={this.state.skills}/>
           {/* <Info info={this.state.education} /> */}
+
+          <footer class="page-footer font-small">
+            <div class="footer-copyright text-center py-4">
+              © Harry Ramli
+            </div>
+          </footer>
         </div>
       </div>
     );

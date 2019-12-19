@@ -12,12 +12,16 @@ body{
   /* overflow-x: hidden; */
 }
 
+.h-logo{
+  color: #1ED760;
+}
+
 .navbar-brand, .nav-link{
   cursor: pointer;
 }
 
 .nav-item > .active {
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid #1ED760;
 }
 
 .section-header{
@@ -70,8 +74,6 @@ body{
     margin-top: 5em;
   }
 }
-
-/* @media (max-width: ) */
 
 .home-lead-2{
   width: 300px;
@@ -137,14 +139,19 @@ body{
   animation: bounce 1s infinite;
 }
 
-/* Info Component */
+/* AboutMe Component */
 
-.banner{
-  height: 500px;
+.AboutMe{
+  padding-top: 1.5em;
+  padding-bottom: 2em;
 }
+
+/* Info Component */
 
 .Info{
   color: white;
+  background-color: rgb(28, 28, 28);
+  padding-bottom: .5em;
 }
 
 .outer {
@@ -170,7 +177,7 @@ body{
 /* ExperienceCard Component */
 
 .ExperienceCard{
-  margin: 4em 0;
+  margin: 2em 0;
   overflow: hidden;
 }
 
@@ -191,6 +198,10 @@ body{
 
 /* Skill Component */
 
+.Skills{
+  margin-bottom: 2em;
+}
+
 .skill-logo{
   width: 100%;
   max-width: 80px;
@@ -205,6 +216,19 @@ svg.graph{
   display: block;
   margin: auto;
   overflow: visible;
+}
+
+@media (max-width: 400px){
+  .graph__container{
+    display: none;
+  }
+}
+
+/* Footer */
+.footer-copyright{
+  border-top: solid 0.5px rgba(255,255,255,.5);
+  color: rgba(255,255,255,.5);
+  font-size: 13px;
 }
 
 /* Animations */
@@ -301,4 +325,23 @@ svg.graph{
             transform: translateX(0);
     opacity: 1;
   }
+}
+
+/* Test  */
+
+.underline-animation {
+	display: inline-block;
+	padding-bottom: 3px;
+}
+
+.underline-animation:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+	animation: underline 4s infinite;
+}
+@keyframes underline {
+  0% { width: 0%; background-color: #1ED760;}
+  100% {width: 100%; background-color: transparent;}
 }
