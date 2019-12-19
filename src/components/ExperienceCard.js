@@ -5,7 +5,7 @@ class ExperienceCard extends React.Component{
         return (
             <div className="ExperienceCard">
                 <div className="row">
-                    <div className="col-md-5" data-aos="fade-right">
+                    <div className="col-md-5 img-col" data-aos="fade-right">
                         <img src={this.props.experience.image}/>
                     </div>
                     <div className="col-md-7" data-aos="fade-left">

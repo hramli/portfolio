@@ -1,5 +1,6 @@
 import React from 'react';
 import profilepic from './../images/profilepicture.png'
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 class Home extends React.Component{
     render(){
@@ -7,25 +8,50 @@ class Home extends React.Component{
             <div className="Home container">
                 <nav className="navbar fixed-top navbar-dark fade-in-top navbar-expand-md">
                     <div className="container">
-                        <a className="navbar-brand" href="#">HR</a>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <Link
+                            activeClass="active"
+                            className="navbar-brand"
+                            to="home"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration= {500}
+                        >HR
+                        </Link>
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                             <span className="navbar-toggler-icon"></span>
                         </button>
 
-                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div className="collapse navbar-collapse w-100 order-3 dual-collapse2">
                             <ul className="navbar-nav ml-auto">
-                                <li className="nav-item active">
-                                    <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                                <li className="nav-item">
+                                    <Link
+                                        activeClass="active"
+                                        className="nav-link"
+                                        to="experience"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration= {500}
+                                    >Experience</Link>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                            <ul className="navbar-nav mr-auto">
+                                <li className="nav-item">
+                                    <a className="nav-link link-icon" target="_blank" href="https://www.linkedin.com/in/harryramli/"><i className="fab fa-linkedin-in"></i></a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Link</a>
+                                    <a className="nav-link link-icon" target="_blank" href="https://github.com/hramli"><i className="fab fa-github"></i></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
 
-                <div className="outer">
+                <div className="outer" id="home">
                     <div className="middle">
                         <div className="row">
                             <div className="col-12 col-md-6 fade-in-left">
@@ -46,7 +72,15 @@ class Home extends React.Component{
                     </div>
                 </div>
                 <div className="chevron-container bounce">
-                    <a><i className="fas fa-chevron-down"></i></a>
+                <Link
+                            activeClass="active"
+                            className="navbar-brand"
+                            to="experience"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration= {500}
+                        ><i className="fas fa-chevron-down"></i></Link>
                 </div>
             </div>
         )
