@@ -12,21 +12,19 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 import rms from './images/rms.png';
 import amz from './images/amz.png';
 
-//import logos for skills sectoin
-import angular from './images/skills/testlogo.png';
-import c from './images/skills/c.png';
-import csharp from './images/skills/csharp.png';
-import java from './images/skills/java.png';
-import js from './images/skills/js.png';
-import mysql from './images/skills/mysql.png';
-import netcore from './images/skills/netcore.png';
-import react from './images/skills/react.png';
-
 class App extends React.Component {
   state = {
     experience: {
         name: 'Experience',
         cardInfo: [
+          {
+            id: 1,
+            title: 'Incoming SDE Intern, Summer 2020',
+            description: [
+    
+            ],
+            image: amz
+          },
           {
             id: 2,
             title: 'Software Engineer Intern, Summer 2019',
@@ -49,41 +47,7 @@ class App extends React.Component {
       cardInfo: [
 
       ]
-    },
-    skills:[
-      {
-        name: 'Angular',
-        logo: angular
-      },
-      {
-        name: 'C',
-        logo: c
-      },
-      {
-        name: 'C#',
-        logo: csharp
-      },
-      {
-        name: 'Java',
-        logo: java
-      },
-      {
-        name: 'JavaScript',
-        logo: js
-      },
-      {
-        name: 'MySQL',
-        logo: mysql
-      },
-      {
-        name: '.NET Core',
-        logo: netcore
-      },
-      {
-        name: 'React',
-        logo: react
-      }
-    ]
+    }
   }
 
   componentDidMount(){
@@ -98,10 +62,9 @@ class App extends React.Component {
         <div className="Home">
           <Home />
         </div>
-        <div className="banner mt-2">
+        <div className="mt-2">
           <Info info={this.state.experience} />
           <Skills skills={this.state.skills}/>
-          {/* <Info info={this.state.education} /> */}
         </div>
       </div>
     );
