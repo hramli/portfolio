@@ -13,8 +13,8 @@ class Node extends React.Component {
 
     render() {
       return ( 
-      <g className = 'node'>
-        <image href={this.props.data.logo} width="70" height="70" x="-14" y="-14"></image>
+        <g className = 'node'>
+            <image href={this.props.data.logo} width="70" height="70" x="-14" y="-14"></image>
         </g>
       );
     }

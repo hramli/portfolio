@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 
 var FORCE = (function(nsp) {
     var
-      width = 300,
-      height = 280,
+      width = 360,
+      height = 328,
       color = d3.scaleOrdinal(d3.schemeCategory10),
   
       initForce = (nodes, links) => {
@@ -67,7 +67,7 @@ var FORCE = (function(nsp) {
       dragEnded = (d) => {
         if (d.x < 0 || d.x > width || d.y < 0 || d.y > height)
             d.fixed = false;
-            if (!d3.event.active) nsp.force.alphaTarget(0);
+        if (!d3.event.active) nsp.force.alphaTarget(0);
             d.fx = null;
             d.fy = null
         

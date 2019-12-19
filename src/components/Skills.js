@@ -1,6 +1,6 @@
 import React from 'react';
 import * as d3 from 'd3';
-import Graph from '../components/graph/Graph';
+import Graph from './graph/Graph';
 
 class Skills extends React.Component{
     componentDidMount(){
@@ -19,7 +19,7 @@ class Skills extends React.Component{
                             <p>Server-side: Node JS, C#, ASP.NET Core.</p>
                             <p>I also use a lot of C/C++ and Java in school.</p>
                         </div>
-                        <div className="col-md-6 skill-logo-col" data-aos="fade-left">
+                        <div className="col-md-6 skill-logo-col">
                             <div id="skill-force-layout">
                                 <Graph />
                             </div>
