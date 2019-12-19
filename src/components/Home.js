@@ -24,6 +24,17 @@ class Home extends React.Component{
 
                         <div className="collapse navbar-collapse w-100 order-3 dual-collapse2">
                             <ul className="navbar-nav ml-auto">
+                            <li className="nav-item">
+                                    <Link
+                                        activeClass="active"
+                                        className="nav-link"
+                                        to="aboutme"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration= {500}
+                                    >About Me</Link>
+                                </li>
                                 <li className="nav-item">
                                     <Link
                                         activeClass="active"
@@ -86,7 +97,7 @@ class Home extends React.Component{
                 <Link
                             activeClass="active"
                             className="navbar-brand"
-                            to="experience"
+                            to="aboutme"
                             spy={true}
                             smooth={true}
                             offset={-70}

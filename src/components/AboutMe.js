@@ -1,7 +1,8 @@
-import React from 'react';
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import React, { useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+
+import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 
 const accessToken = 'pk.eyJ1IjoiaGFycnlyYW1saSIsImEiOiJjazRjZ241emEwMDJqM21tem1vaWNxZTRlIn0.bzko7gmMoMNAOVMwripUcw';
 
@@ -13,14 +14,25 @@ var myIcon = L.icon({
 })
 
 class AboutMe extends React.Component{
+    // state = {
+    //     lat: 51.505,
+    //     lng: -0.09,
+    //     zoom: 13,
+    // };
+
     state = {
-        lat: 51.505,
-        lng: -0.09,
-        zoom: 13,
-    }
+        viewport: {
+            width: 500,
+            height: 405,
+            latitude: 34.489,
+            longitude: -116.4462,
+            zoom: 5
+        }
+    };
 
     render(){
         const position = [this.state.lat, this.state.lng];
+        console.log(accessToken);
 
         return (
             <div className="AboutMe" id="aboutme">
@@ -29,25 +41,24 @@ class AboutMe extends React.Component{
                         <div className="col-md-5">
                             <h1 className="display-4 section-header my-4 underline-animation" data-aos="fade-right">About Me</h1>
                             <div data-aos="fade-up">
-                                <p>Most of my experience is on full stack development, building small to medium web applications.</p>
-                                <p>Client-side: HTML, CSS, JavaScript/TypeScript, Angular 2+, React.</p>
-                                <p>Server-side: Node JS, C#, ASP.NET Core.</p>
-                                <p>I also use a lot of C/C++ and Java in school.</p>
+                                <p>Undergraduate student studying Computer Science at UCLA.</p>
+                                <p>Determined, passionate, and detailed. Love music, movies, television series, and code. <strong>(especially debugging)</strong></p>
+                                <p>Feel free to reach out to me via <a href="mailto:abc@example.com" className="h-logo">email</a> or <a href="https://www.linkedin.com/in/harryramli/" className="h-logo">Linkedin</a>.</p>                                
                             </div>
                         </div>
-                        <div className="col-md-7 skill-logo-col">
-                            {/* Map */}
-                            <Map className="map" center={position} zoom={this.state.zoom}>
-                                <TileLayer
-                                attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                                />
-                                <Marker position={position} icon={myIcon}>
-                                    <Popup>
-                                        A pretty CSS3 popup. <br /> Easily customizable.
-                                    </Popup>
-                                </Marker>
-                            </Map>
+                        <div className="col-md-7 map-col" data-aos="fade-down">
+                            <ReactMapGL {
+                                ...this.state.viewport} 
+                                mapboxApiAccessToken={accessToken}
+                                mapStyle="mapbox://styles/harryramli/ck4cii9n619id1cpfe0t57cfl"
+                                onViewportChange={(viewport) => this.setState({viewport})}
+                                >
+                                    <Marker latitude={34.0689} longitude={-118.4452} offsetLeft={-20} offsetTop={-10}>
+                                        <button className="map-pin">
+                                            <i class="fab fa-periscope"></i>
+                                        </button>
+                                    </Marker>
+                            </ReactMapGL>
                         </div>
                     </div>
                 </div>
