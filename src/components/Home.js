@@ -16,12 +16,13 @@ class Home extends React.Component{
                             smooth={true}
                             offset={-70}
                             duration= {500}
-                        >HR</Link>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        >HR
+                        </Link>
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                             <span className="navbar-toggler-icon"></span>
                         </button>
 
-                        <div className="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
+                        <div className="collapse navbar-collapse w-100 order-3 dual-collapse2">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
                                     <Link
@@ -40,10 +41,10 @@ class Home extends React.Component{
                         <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                             <ul className="navbar-nav mr-auto">
                                 <li className="nav-item">
-                                    <a className="nav-link link-icon" target="_blank" href="https://www.linkedin.com/in/harryramli/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a className="nav-link link-icon" target="_blank" href="https://www.linkedin.com/in/harryramli/"><i className="fab fa-linkedin-in"></i></a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link link-icon" target="_blank" href="https://github.com/hramli"><i class="fab fa-github"></i></a>
+                                    <a className="nav-link link-icon" target="_blank" href="https://github.com/hramli"><i className="fab fa-github"></i></a>
                                 </li>
                             </ul>
                         </div>
