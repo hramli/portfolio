@@ -5,18 +5,18 @@ var FORCE = (function(nsp) {
     var
       width = 360,
       height = 328,
-      color = d3.scaleOrdinal(d3.schemeCategory10),
   
       initForce = (nodes, links) => {
         nsp.force = d3.forceSimulation(nodes)
           .force("charge", d3.forceManyBody().strength(-200))
           .force("link", d3.forceLink(links).distance(100))
-          .force("center", d3.forceCenter().x(nsp.width / 3).y(nsp.height / 2))
+          .force("center", d3.forceCenter().x(nsp.width / 2.5).y(nsp.height / 2))
           .force("collide", d3.forceCollide([5]).iterations([5]));
+        
+        setInterval(function(){nsp.force.alpha(0.6);},250);
       },
   
       enterNode = (selection) => {
-  
         selection.select('text')
           .style("fill", "white")
       },
@@ -35,7 +35,7 @@ var FORCE = (function(nsp) {
   
       enterLink = (selection) => {
         selection
-          .attr("stroke-width", 2)
+          .attr("stroke-width", 1)
       },
   
       updateLink = (selection) => {

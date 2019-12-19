@@ -30,6 +30,7 @@ a.h-logo:hover{
 }
 
 .section-header{
+  color: #1ED760;
   font-size: 2.5rem;
 }
 
@@ -113,6 +114,10 @@ a.h-logo:hover{
   }
 }
 
+.sections{
+  padding-bottom: 2em;
+}
+
 .chevron-container{
   position: absolute;
   top: 92%;
@@ -148,7 +153,6 @@ a.h-logo:hover{
 
 .AboutMe{
   padding-top: 1.5em;
-  padding-bottom: 2em;
 }
 
 .map-pin{
@@ -159,8 +163,16 @@ a.h-logo:hover{
   cursor: pointer;
 }
 
-.map-col > div{
-  margin: auto;
+.map-col{
+  min-height: 250px;
+}
+
+mapboxgl-canvas{
+  left: 0;
+}
+
+a.mapboxgl-ctrl-logo, .mapboxgl-ctrl-bottom-right{
+  display: none;
 }
 
 /* Info Component */
@@ -168,7 +180,6 @@ a.h-logo:hover{
 .Info{
   color: white;
   background-color: rgb(28, 28, 28);
-  padding-bottom: .5em;
 }
 
 .outer {
@@ -194,7 +205,6 @@ a.h-logo:hover{
 /* ExperienceCard Component */
 
 .ExperienceCard{
-  margin: 2em 0;
   overflow: hidden;
 }
 
@@ -210,13 +220,18 @@ a.h-logo:hover{
 }
 
 .experience-title{
+  color: #1ED760;
   font-size: 1.8rem;
+}
+
+.first-experience-title{
+  margin-top: 1em;
 }
 
 /* Skill Component */
 
 .Skills{
-  margin-bottom: 2em;
+
 }
 
 .skill-logo{
