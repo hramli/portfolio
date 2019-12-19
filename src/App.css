@@ -16,6 +16,11 @@ body{
   color: #1ED760;
 }
 
+a.h-logo:hover{
+  text-decoration: none;
+  color: rgb(23, 183, 79);
+}
+
 .navbar-brand, .nav-link{
   cursor: pointer;
 }
@@ -25,6 +30,7 @@ body{
 }
 
 .section-header{
+  color: #1ED760;
   font-size: 2.5rem;
 }
 
@@ -94,7 +100,7 @@ body{
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: white; }
+  50% { border-color: #1ED760; }
 }
 
 @keyframes blink {
@@ -106,6 +112,10 @@ body{
   50% {
     border-color: tranparent;
   }
+}
+
+.sections{
+  padding-bottom: 2em;
 }
 
 .chevron-container{
@@ -143,7 +153,26 @@ body{
 
 .AboutMe{
   padding-top: 1.5em;
-  padding-bottom: 2em;
+}
+
+.map-pin{
+  color: #1ED760;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.map-col{
+  min-height: 250px;
+}
+
+mapboxgl-canvas{
+  left: 0;
+}
+
+a.mapboxgl-ctrl-logo, .mapboxgl-ctrl-bottom-right{
+  display: none;
 }
 
 /* Info Component */
@@ -151,7 +180,6 @@ body{
 .Info{
   color: white;
   background-color: rgb(28, 28, 28);
-  padding-bottom: .5em;
 }
 
 .outer {
@@ -177,7 +205,6 @@ body{
 /* ExperienceCard Component */
 
 .ExperienceCard{
-  margin: 2em 0;
   overflow: hidden;
 }
 
@@ -193,13 +220,18 @@ body{
 }
 
 .experience-title{
+  color: #1ED760;
   font-size: 1.8rem;
+}
+
+.first-experience-title{
+  margin-top: 1em;
 }
 
 /* Skill Component */
 
 .Skills{
-  margin-bottom: 2em;
+
 }
 
 .skill-logo{
@@ -331,15 +363,14 @@ svg.graph{
 
 .underline-animation {
 	display: inline-block;
-	padding-bottom: 3px;
 }
 
 .underline-animation:after {
 	content: '';
 	display: block;
 	margin: auto;
-	height: 2px;
-	animation: underline 4s infinite;
+	height: 3px;
+	animation: underline 3s infinite;
 }
 @keyframes underline {
   0% { width: 0%; background-color: #1ED760;}

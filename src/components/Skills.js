@@ -9,7 +9,7 @@ class Skills extends React.Component{
 
     render(){
         return (
-            <div className="Skills" id="skills">
+            <div className="Skills sections" id="skills">
                 <div className="container">
                     <div className="row skill-row">
                         <div className="col-md-6">
