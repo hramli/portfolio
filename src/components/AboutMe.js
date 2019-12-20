@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import ReactMapGL, {Marker} from 'react-map-gl';
 import {AutoSizer} from 'react-virtualized';
 
-const accessToken = 'inserttokenhere';
+const accessToken = 'pk.eyJ1IjoiaGFycnlyYW1saSIsImEiOiJjazRjZ241emEwMDJqM21tem1vaWNxZTRlIn0.bzko7gmMoMNAOVMwripUcw';
 
 class AboutMe extends React.Component{
 
@@ -27,8 +27,8 @@ class AboutMe extends React.Component{
                             <h1 className="display-4 section-header my-4 underline-animation" data-aos="fade-right">About Me</h1>
                             <div data-aos="fade-up">
                                 <p>Undergraduate student studying Computer Science at UCLA.</p>
-                                <p>Determined, passionate, and detailed. Love music, movies, television series, and code. <strong>(especially debugging)</strong></p>
-                                <p>Feel free to reach out to me via <a href="mailto:harryramli99@gmail.com" className="h-logo">email</a> or <a href="https://www.linkedin.com/in/harryramli/" className="h-logo">Linkedin</a>.</p>                                
+                                <p>Determined, passionate, and detailed. Love music, movies, television series, and code. <strong>(especially debugging <i class="far fa-smile"></i>)</strong></p>
+                                <p>Feel free to reach out to me via <a href="mailto:harryramli99@gmail.com" className="h-logo">email</a> or <a href="https://www.linkedin.com/in/harryramli/" target="_blank" className="h-logo">Linkedin</a>.</p>                                
                             </div>
                         </div>
                         <div className="col-md-7 map-col" data-aos="fade-down">

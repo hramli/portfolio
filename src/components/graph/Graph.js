@@ -97,7 +97,7 @@ class Graph extends React.Component{
                     source: 3,
                     target: 7,
                     id: 5
-                },
+                }
             ]
         }
     }

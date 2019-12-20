@@ -13,7 +13,7 @@ var FORCE = (function(nsp) {
           .force("center", d3.forceCenter().x(nsp.width / 2.5).y(nsp.height / 2))
           .force("collide", d3.forceCollide([5]).iterations([5]));
         
-        setInterval(function(){nsp.force.alpha(0.6);},250);
+        setInterval(function(){nsp.force.alpha(0.6);},1250);
       },
   
       enterNode = (selection) => {

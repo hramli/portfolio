@@ -2,10 +2,17 @@ import React from 'react';
 import profilepic from './../images/profilepicture.png'
 import { Link, animateScroll as scroll } from 'react-scroll';
 
+import '../stars.css'
+
 class Home extends React.Component{
     render(){
         return (
             <div className="Home container">
+                <div data-aos="fade-out">
+                    <div id='stars'></div>
+                    <div id='stars2'></div>
+                    <div id='stars3'></div>
+                </div>
                 <nav className="navbar fixed-top navbar-dark fade-in-top navbar-expand-md">
                     <div className="container">
                         <Link
