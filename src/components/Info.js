@@ -11,7 +11,7 @@ class Info extends React.Component{
         return (
             <div className="Info">
                 <div className="container">
-                    <h1 id="experience" className="display-4 section-header my-4 underline-animation" data-aos="fade-right">{
+                    <h1 id="experience" className="display-4 section-header my-4 underline-animation" data-aos="">{
                         this.props.info.name}
                     </h1>
                     {experiences}

@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Info from './components/Info';
 import Skills from './components/Skills';
 import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
 import './App.css';
 
 import AOS from 'aos';
@@ -41,7 +42,13 @@ class App extends React.Component {
             id: 1,
             title: 'Incoming SDE Intern, Summer 2020',
             description: [
-              
+              <li key="0">Streamlined company’s auditing process by building a full-stack timetracking web app with 
+                  JWT-secured REST API service using <strong>Angular</strong>, <strong>ASP.NET Core</strong>, <strong>MySQL</strong> and 
+                  deployed as <strong>Docker</strong> containers to AWS.</li>,
+              <li key="1">Participated in daily standups and working group staff meetings.</li>,
+              <li key="2">Implemented a draggable and customizable KPI dashboard with data visualization using <strong>Angular </strong> 
+                  and <strong>D3.js</strong>, and demoed the product concept to the CEO.</li>,
+              <li key="3">Participated in daily standups and working group staff meetings.</li>
             ],
             stack: [
                 'Angular',
@@ -69,7 +76,7 @@ class App extends React.Component {
           <AboutMe />
           <Info info={this.state.experience} />
           <Skills skills={this.state.skills}/>
-          {/* <Info info={this.state.education} /> */}
+          <Projects />
 
           <footer className="page-footer font-small">
             <div className="footer-copyright text-center py-4">

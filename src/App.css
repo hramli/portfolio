@@ -248,12 +248,19 @@ svg.graph{
   display: block;
   margin: auto;
   overflow: visible;
+  filter: drop-shadow( 0 5px 5px gray);
 }
 
 @media (max-width: 400px){
   .graph__container{
     display: none;
   }
+}
+
+/* Projects Component */
+
+.Projects{
+  background-color: rgb(28, 28, 28);
 }
 
 /* Footer */
