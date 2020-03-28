@@ -37,24 +37,6 @@ class App extends React.Component {
             ],
             image: rms,
             first: true
-          },
-          {
-            id: 1,
-            title: 'Incoming SDE Intern, Summer 2020',
-            description: [
-              <li key="0">Streamlined company’s auditing process by building a full-stack timetracking web app with 
-                  JWT-secured REST API service using <strong>Angular</strong>, <strong>ASP.NET Core</strong>, <strong>MySQL</strong> and 
-                  deployed as <strong>Docker</strong> containers to AWS.</li>,
-              <li key="1">Participated in daily standups and working group staff meetings.</li>,
-              <li key="2">Implemented a draggable and customizable KPI dashboard with data visualization using <strong>Angular </strong> 
-                  and <strong>D3.js</strong>, and demoed the product concept to the CEO.</li>,
-              <li key="3">Participated in daily standups and working group staff meetings.</li>
-            ],
-            stack: [
-                'Angular',
-                'ASP.NET Core'
-            ],
-            image: amz
           }
         ]        
     }

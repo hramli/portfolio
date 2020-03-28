@@ -21,6 +21,15 @@ a.h-logo:hover{
   color: rgb(23, 183, 79);
 }
 
+.text-link{
+  color: rgb(23, 183, 79);
+  cursor: pointer;
+}
+
+.text-link:hover{
+  color: rgb(17, 134, 58);
+}
+
 .navbar-brand, .nav-link{
   cursor: pointer;
 }
