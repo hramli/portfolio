@@ -20,6 +20,16 @@ class App extends React.Component {
         cardInfo: [
           {
             id: 0,
+            title: 'Incoming SDE Intern, Summer 2020',
+            description: [
+            ],
+            stack: [
+            ],
+            image: amz,
+            first: true
+          },
+          {
+            id: 1,
             title: 'Software Engineer Intern, Summer 2019',
             description: [
                 <li key="0">Streamlined company’s auditing process by building a full-stack timetracking web app with 
@@ -36,7 +46,7 @@ class App extends React.Component {
                 'ASP.NET Core'
             ],
             image: rms,
-            first: true
+            first: false
           }
         ]        
     }
