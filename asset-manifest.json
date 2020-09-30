@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.56caba55.chunk.css",
-    "main.js": "/portfolio/static/js/main.934b2b1c.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.934b2b1c.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.8ce3b978.chunk.css",
+    "main.js": "/portfolio/static/js/main.bce2b125.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.bce2b125.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.b37861ed.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.b37861ed.js.map",
     "static/css/2.8a2bb823.chunk.css": "/portfolio/static/css/2.8a2bb823.chunk.css",
-    "static/js/2.4c2a264b.chunk.js": "/portfolio/static/js/2.4c2a264b.chunk.js",
-    "static/js/2.4c2a264b.chunk.js.map": "/portfolio/static/js/2.4c2a264b.chunk.js.map",
+    "static/js/2.b3d59f87.chunk.js": "/portfolio/static/js/2.b3d59f87.chunk.js",
+    "static/js/2.b3d59f87.chunk.js.map": "/portfolio/static/js/2.b3d59f87.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.88ffabbeca6bfb50427758233815dcab.js": "/portfolio/precache-manifest.88ffabbeca6bfb50427758233815dcab.js",
+    "precache-manifest.e7bf6a04aea517f7b686b22bb14900d2.js": "/portfolio/precache-manifest.e7bf6a04aea517f7b686b22bb14900d2.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.8a2bb823.chunk.css.map": "/portfolio/static/css/2.8a2bb823.chunk.css.map",
-    "static/css/main.56caba55.chunk.css.map": "/portfolio/static/css/main.56caba55.chunk.css.map",
-    "static/js/2.4c2a264b.chunk.js.LICENSE.txt": "/portfolio/static/js/2.4c2a264b.chunk.js.LICENSE.txt",
+    "static/css/main.8ce3b978.chunk.css.map": "/portfolio/static/css/main.8ce3b978.chunk.css.map",
+    "static/js/2.b3d59f87.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b3d59f87.chunk.js.LICENSE.txt",
     "static/media/amz.png": "/portfolio/static/media/amz.3506249c.png",
     "static/media/c.png": "/portfolio/static/media/c.e79e5dbd.png",
     "static/media/csharp.png": "/portfolio/static/media/csharp.d8f9aac0.png",
@@ -28,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.b37861ed.js",
     "static/css/2.8a2bb823.chunk.css",
-    "static/js/2.4c2a264b.chunk.js",
-    "static/css/main.56caba55.chunk.css",
-    "static/js/main.934b2b1c.chunk.js"
+    "static/js/2.b3d59f87.chunk.js",
+    "static/css/main.8ce3b978.chunk.css",
+    "static/js/main.bce2b125.chunk.js"
   ]
 }
