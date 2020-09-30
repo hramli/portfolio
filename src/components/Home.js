@@ -87,7 +87,7 @@ class Home extends React.Component{
                                 <div className="outer">
                                     <div className="middle">
                                         <h1 className="display-4">Hello, world!</h1>
-                                        <p className="lead">I am Harry, a <strong>Computer Science</strong> senior studying at <strong>University of California, Los Angeles</strong>.</p>                                         
+                                        <p className="lead">I am Harry, a <strong>Computer Science</strong> senior studying at <strong>University of California, Los Angeles</strong>.</p>
                                         <p className="lead home-lead-2">Passionate about tech and football.</p>
                                     </div>
                                 </div>
